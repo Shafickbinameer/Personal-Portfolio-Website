@@ -324,6 +324,7 @@ section {
 
 .port-projects {
     background: linear-gradient(whitesmoke, rgba(187, 187, 187, 0.5));
+    position: relative;
 }
 
 .port-project {
@@ -684,6 +685,7 @@ section {
     right: -10px;
 }
 .port-projects button{
+    position: relative;
     top: 55%;
 }
 
