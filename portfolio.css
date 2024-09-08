@@ -324,7 +324,6 @@ section {
 
 .port-projects {
     background: linear-gradient(whitesmoke, rgba(187, 187, 187, 0.5));
-    position: relative;
 }
 
 .port-project {
@@ -554,16 +553,28 @@ section {
 }
 
 @media (max-width: 600px) {
+    body{
+        font-size: 16px;
+    }
     .port-intro{
-        height: 900px;
+        height: 800px;
     }
 
     header {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: space-between;
+        max-width: 400px;
     }
+    .port-myimg img{
+        width: 150px;
+        height: 150px;
+    }
+    .port-name{
+        letter-spacing: 0rem;
+        padding-left: 20px;
 
+    }
     .port-about {
         display: flex;
         flex-direction: column;
@@ -586,13 +597,15 @@ section {
         display: none;
         flex-direction: column;
     }
+    nav{
+        position: relative;
+        z-index: 10;
+    }
 
     .port-nav a {
         text-align: center;
         border: none;
         border-radius: 10px;
-        position: relative;
-        z-index: 20;
     }
 
     .port-nav a:hover::after {
@@ -613,10 +626,13 @@ section {
 
     /* about */
     .about-me {
-        max-height: 900px;
+        max-height: 800px;
+        min-width: 400px;
         background: linear-gradient(rgba(187, 187, 187, 0.5), whitesmoke);
         border: none;
         border-radius: 15px;
+        gap: 0px;
+        margin-top:20px;
     }
 
 
@@ -634,56 +650,80 @@ section {
 
     /* projects*/
 
-    .port-projects {
-        max-height: 900px;
-    }
+   .port-projects{
+    position: relative;
+    top: 10px;
+    display: grid;
+    row-gap: 0px;
+    
+   }
+   #port-heading {
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 20px;
+    margin: 10px;
+    padding-top: 20%;
+}
+.port-project .project {
+    min-width: 250px;
+    min-height: 400px;
+    padding: 20px;
+    border: none;
+    margin-right: 0px;
+    border-radius: 5px;
+    background-color: white;
+    transition: .3s ease-in-out;
+    position: relative;
+    z-index: 1;
+}
+.port-projects .prev{
+    left: -20px;
+}
+.port-projects .next{
+    right: -10px;
+}
+.port-projects button{
+    top: 55%;
+}
 
-    .port-slider {
-        position: relative;
-        width: 50%;
-        height: 80%;
-        overflow-x: auto;
-        scroll-snap-type: x mandatory;
-        scroll-behavior: smooth;
-    }
-
-    .port-porject .project {
-        margin: 20px;
-        min-width: 600px;
-    }
-
-    .port-project {
-        gap: 20px;
-        justify-content: space-between;
-        height: 800px;
-
-    }
-
-    .port-project .project {
-        min-width: 300px;
-        min-height: 500px;
-        font-size: 20px;
-        line-height: 1.5rem;
-    }
-
-    .port-projects .next {
-        right: 40px;
-    }
-    .port-projects .prev {
-        left: 40px;
-    }
-
+   .port-slider {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    height: 500px;
+    padding: 0px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
     /*skill*/
     .port-skills {
-        min-height: 900px;
+        min-height: 800px;
     }
 
     .skill {
         grid-template-columns: repeat(2, 1fr);
         width: 400px;
     }
+    .skill .sub{
+        width: 150px;
+        height: 150px;
+        font-size: 16px;
+    }
+    .skill .sub img{
+        width:50px;
+        height: 50px;
+    }
     /* contact*/
-
+    .port-contact {
+        display: block;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        gap: 25%;
+    }
     .contact-animation{
         display: none;
     }
