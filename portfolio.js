@@ -25,7 +25,7 @@ var menu = document.querySelector('.navmob');
 if (menu.addEventListener('mouseover', () => {
     var navbar = document.querySelector(".port-nav");
     var screenwidth = screen.availWidth;
-    if (screenwidth <= 600) {
+    if (screenwidth <= 500) {
         navbar.style.display = "flex";
         navbar.style.transition = ".3s";
     } else {
@@ -39,7 +39,7 @@ else if (menu.addEventListener('mouseout', () => {
 }));
 
 var screenwidth = screen.availWidth;
-if (screenwidth <= 600) {
+if (screenwidth <= 500) {
     const productContainer = document.querySelectorAll('.port-slider');
     const nxtbtn = document.querySelectorAll('.next');
     const prebnt = document.querySelectorAll('.prev');

@@ -289,7 +289,6 @@ section {
 }
 
 .skill .sub:hover {
-    transform: scale(1.1);
     box-shadow: 0 0 20px 5px gray;
     color: orange;
 }
@@ -365,7 +364,6 @@ section {
 }
 
 .port-project .project:hover {
-    transform: scale(1.1);
     box-shadow: 0 0 15px 5px gray;
     z-index: 10;
 }
@@ -553,12 +551,12 @@ section {
     left: 30%;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
     body{
         font-size: 16px;
     }
     .port-intro{
-        height: 800px;
+        height: 700px;
     }
 
     header {
@@ -624,6 +622,10 @@ section {
         position: relative;
         top: 10px;
     }
+    .nav-bar{
+        position: relative;
+        z-index: 10;
+    }
 
     /* about */
     .about-me {
@@ -647,24 +649,26 @@ section {
         text-overflow: ellipsis;
         line-height: 2.5rem;
         padding: 0px;
+        margin-top: 20px;
     }
 
     /* projects*/
 
    .port-projects{
     position: relative;
-    top: 10px;
-    display: grid;
-    row-gap: 0px;
-    
+    top: 10%;
+    height: 600px;
+    border: none;
+    border-radius: 15px;
    }
    #port-heading {
     text-align: center;
     font-size: 25px;
     font-weight: 700;
-    padding: 20px;
-    margin: 10px;
-    padding-top: 20%;
+    padding: 0px;
+    margin: 0px;
+    padding-top: 5%;
+    height: 50px;
 }
 .port-project .project {
     min-width: 250px;
@@ -679,18 +683,15 @@ section {
     z-index: 1;
 }
 .port-projects .prev{
-    left: -20px;
+    display: none;
 }
 .port-projects .next{
-    right: -10px;
-}
-.port-projects button{
-    position: relative;
-    top: 55%;
+   display: none;
 }
 
    .port-slider {
     position: relative;
+    top: 5%;
     left: 50%;
     transform: translateX(-50%);
     width: 300px;
@@ -702,7 +703,7 @@ section {
 }
     /*skill*/
     .port-skills {
-        min-height: 800px;
+        min-height: 850px;
     }
 
     .skill {
