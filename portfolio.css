@@ -638,7 +638,9 @@ section {
         margin-top:20px;
     }
 
-
+    .about-content #me{
+        margin-top: 10px;
+    }
     .about-img img {
         display: none;
 
