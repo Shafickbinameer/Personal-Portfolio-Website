@@ -363,10 +363,6 @@ section {
     z-index: 1;
 }
 
-.port-project .project:hover {
-    box-shadow: 0 0 15px 5px gray;
-    z-index: 10;
-}
 
 #port-heading {
     text-align: center;
@@ -550,6 +546,67 @@ section {
     position: relative;
     left: 30%;
 }
+@media (min-width:600px) and (max-width: 900px){
+    .port-intro{
+        max-height: 500px;
+    }
+    nav{
+        gap: 20px;
+        right: 0px;
+    }
+    .port-nav a {
+        font-size: 13px;
+    }
+    .port-myname #web{
+        font-size: 50px;
+    }
+    .port-about{
+        padding: 2rem;
+    }
+    .port-myimg img{
+        width: 150px;
+        height: 150px;
+    } 
+    .about-me{
+        max-height: 600px;
+    }
+    .about-content{
+        padding: 10px;
+    }
+    .port-skills{
+        max-height: 500px;
+    }
+    .skill .sub{
+        width: 150px;
+        height: 150px;
+    }
+    .skill{
+        gap: 40px;
+        width: 800px;
+    } 
+    .port-projects{
+        max-height: 600px;
+    }
+    .port-slider{
+        width: 550px;
+    }
+    .port-projects .prev{
+        left: 20px;
+    }
+    .port-projects .next{
+        right: 10px;
+    }
+    .port-contact{
+        max-height: 800px;
+    }
+    .contact-animation{
+        display: none;
+    }
+    .contact-page{
+        justify-content:center;
+        right: 0px;
+    }
+}
 
 @media (max-width: 500px) {
     body{
@@ -596,10 +653,6 @@ section {
         display: none;
         flex-direction: column;
     }
-    nav{
-        position: relative;
-        z-index: 10;
-    }
 
     .port-nav a {
         text-align: center;
@@ -621,10 +674,6 @@ section {
         transition: .3s ease;
         position: relative;
         top: 10px;
-    }
-    .nav-bar{
-        position: relative;
-        z-index: 10;
     }
 
     /* about */

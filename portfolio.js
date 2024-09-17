@@ -58,3 +58,24 @@ if (screenwidth <= 500) {
         })
     })
 }
+
+var screenwidth = screen.availWidth;
+if (screenwidth  = 900) {
+    const productContainer = document.querySelectorAll('.port-slider');
+    const nxtbtn = document.querySelectorAll('.next');
+    const prebnt = document.querySelectorAll('.prev');
+
+    productContainer.forEach((item, i) => {
+        let contentdimenssion = item.getBoundingClientRect();
+        let contentwidth = contentdimenssion.width;
+
+
+        nxtbtn[i].addEventListener('click', () => {
+            item.scrollLeft += contentwidth;
+        })
+
+        prebnt[i].addEventListener('click', () => {
+            item.scrollLeft -= contentwidth;
+        })
+    })
+}
